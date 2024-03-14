@@ -1,5 +1,7 @@
 # Task Manager
 
+![Demo App](/public/demo.png)
+
 ## Some Features
 
 - 🌟 Tech Stack: Next.js + TailwindCSS + Prisma + MongoDB
