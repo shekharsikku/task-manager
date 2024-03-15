@@ -2,11 +2,11 @@
 import styled from 'styled-components';
 
 interface Props {
-    children: React.ReactNode
+  children: React.ReactNode
 }
 
 const GlobalStylesProvider = ({ children }: Props) => {
-    return <GlobalStyles>{children}</GlobalStyles>
+  return <GlobalStyles>{children}</GlobalStyles>
 }
 
 const GlobalStyles = styled.div`
