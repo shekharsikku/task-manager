@@ -81,6 +81,7 @@ export const GlobalProvider = ({ children }) => {
   return (
     <GlobalContext.Provider
       value={{
+        user,
         theme,
         tasks,
         allTasks,
