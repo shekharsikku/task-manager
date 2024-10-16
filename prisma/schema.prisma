@@ -3,18 +3,18 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
 model Tasks {
-  id          String   @id @default(cuid()) @map("_id")
+  id          String   @id @default(cuid())
   title       String
   description String?
   date        String
   isCompleted Boolean  @default(false)
   isImportant Boolean  @default(false)
-  createdAt   DateTime @default(now()) @map("createdAt")
-  updatedAt   DateTime @updatedAt @map("updatedAt")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
   userId      String
 }
